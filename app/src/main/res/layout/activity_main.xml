@@ -10,7 +10,10 @@
         android:layout_height="match_parent">
 
 
+
+
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:backgroundTint="#8E0C0C"
@@ -21,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.example.combinationtickselector.CombinationView
+            android:id="@+id/combinationView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
