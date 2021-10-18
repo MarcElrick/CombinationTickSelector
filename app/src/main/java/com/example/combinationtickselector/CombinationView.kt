@@ -37,16 +37,11 @@ class CombinationView @JvmOverloads constructor(
                 }
 
                 val angleToRotate = pointsToRotation(previousX, previousY, event.x, event.y)
-
-
                 currentRotation += angleToRotate
-
-
 
                 previousX = event.x
                 previousY = event.y
                 invalidate()
-
             }
         }
         return true
@@ -115,9 +110,7 @@ class CombinationView @JvmOverloads constructor(
     private fun pointsToRotation(x1: Float, y1: Float, x2: Float, y2: Float): Float {
         val m1 = (radius - y1) / (radius - x1)
         val m2 = (radius - y2) / (radius - x2)
-
         val tanTheta = (m2 - m1) / (1 + m2 * m1)
         return atan(tanTheta)
     }
-
 }
